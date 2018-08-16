@@ -29,10 +29,8 @@ export class TaskListComponent {
   this.filterByCompleteness = optionFromMenu;
 }
 
-toggleDone(clickedTask: Task, setCompleteness: boolean) {
-     clickedTask.done = setCompleteness;
-   }
-
-
+  toggleDone(clickedTask: Task, setCompleteness: boolean) {
+       clickedTask.done = setCompleteness;
+    }
 
 }
