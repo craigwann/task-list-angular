@@ -7,7 +7,7 @@ import { Task } from './models/task.model';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  currentFocus: string = 'Angular Homework';
+  currentFocus: string = 'Task Lists';
   currentTime = new Date();
   month: number = this.currentTime.getMonth() + 1;
   day: number = this.currentTime.getDate();
@@ -27,4 +27,7 @@ export class AppComponent {
     this.selectedTask = null;
   }
 
+  addTask(newTask: Task) {
+    this.masterTaskList.push(newTask);
+  }
 }
