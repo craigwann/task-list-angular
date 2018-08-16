@@ -11,12 +11,12 @@ export class TaskListComponent {
   @Output() clickSender = new EventEmitter();
 
   priorityColor(currentTask){
-    if (currentTask.priority === 3){
+    if (currentTask.priority == 3){
       return "bg-danger";
-    } else if (currentTask.priority === 2) {
+    } else if (currentTask.priority == 2) {
       return  "bg-warning";
     } else {
-      return "bg-info";
+      return "bg-success";
     }
   }
 

@@ -16,7 +16,7 @@ export class AppComponent {
   masterTaskList: Task[] = [
     new Task('Finish weekend Angular homework for Epicodus course', 3),
     new Task('Begin brainstorming possible JavaScript group projects', 2),
-    new Task('Add README file to last few Angular repos on GitHub', 2)
+    new Task('Add README file to last few Angular repos on GitHub', 1)
   ];
 
   editTask(clickedTask) {
